@@ -1,0 +1,156 @@
+.basepage-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 130px auto; /* Increase margin to push the container lower */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Add background-color transition */
+}
+
+.basepage-container:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); /* Increase box shadow on hover */
+  transform: translateY(5px); /* Move the container down slightly on hover */
+  background-color: rgba(255, 255, 255, 1); /* Brighten background color on hover */
+}
+.basepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px; /* Adjust this value as needed */
+  }
+  .basepage h2 {
+    margin-right: 10px; /* Adjust this value to add space between elements */
+  }
+
+  .add-button {
+    background-color: #ffd700; /* Yellow background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Curved shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .add-button:hover {
+    background-color: #a08d22; /* Darker background color on hover */
+  }
+  /* style.css */
+.custom-modal {
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+  }
+  /* style.css */
+.modal-header {
+    background-color: #1c4165; /* Set the background color of the modal header */
+    color: #fff; /* Set the text color of the modal header */
+    border-bottom: none; /* Remove the bottom border of the modal header */
+    border-top-left-radius: 10px; /* Add a rounded corner to the top-left of the modal header */
+    border-top-right-radius: 10px; /* Add a rounded corner to the top-right of the modal header */
+    padding: 20px; /* Add padding to the modal header */
+  }
+  
+  .modal-title {
+    font-size: 24px; /* Set the font size of the modal title */
+    margin: 0; /* Remove any default margin */
+  }
+  /* style.css */
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form groups */
+  }
+  
+  .form-label {
+    font-weight: bold; /* Make the form labels bold */
+  }
+  .form-control {
+    width: 100%; /* Set the width of form controls to 100% */
+    padding: 10px; /* Add padding to form controls */
+    border: 1px solid #ced4da; /* Add a border to form controls */
+    border-radius: 5px; /* Add rounded corners to form controls */
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff; /* Change the border color when form control is focused */
+    outline: 0; /* Remove the outline when form control is focused */
+  }
+  
+  textarea.form-control {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+.ind-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ind-container h4 {
+    margin-right: 10px; /* Add some space between the label and input field */
+  }
+  
+  .ind-container input {
+    margin-right: 10px; /* Add some space between the input field and button */
+  }
+  
+  .bind {
+    padding: 5px 10px; /* Adjust padding to make the button smaller */
+    border-radius: 20px; /* Add border radius to make the button curved */
+    background-color: #ffd700; /* Black background color */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .bind:hover {
+    background-color: #bab03bce; /* Darker background color on hover */
+  }
+  /* Styles for the ordered list */
+/* Styles for the ordered list */
+.instruction-list {
+  list-style-type: none;
+  counter-reset: instruction-counter;
+  padding: 0;
+  margin-left: 0; /* Move the list to the left */
+}
+
+/* Styles for each list item */
+.instruction-item {
+  position: relative;
+  margin-bottom: 20px; /* Add margin bottom for spacing between items */
+}
+
+/* Styles for the number circle */
+.instruction-item:before {
+  content: counter(instruction-counter);
+  counter-increment: instruction-counter;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #ffd700; /* Background color for numbers */
+  border-radius: 50%; /* Circular background */
+  margin-right: 15px; /* Add space between circle and text */
+  font-weight: bold;
+  color: #fff; /* Text color for numbers */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the circle */
+}
+
+/* Add margin between separate ingredients */
+.instruction-item + .instruction-item {
+  margin-top: 10px; /* Add margin between separate items */
+}
+
+  p {
+  word-wrap: break-word; /* Enable word-wrap to prevent overflow */
+  color: #333; /* Set text color */
+  font-size: 1rem; /* Set font size */
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* CSS for Ingredients Header */
+h4 {
+  color: #555; /* Set text color */
+  font-size: 1.2rem; /* Set font size */
+  margin-bottom: 10px; /* Add margin below the header */
+}

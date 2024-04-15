@@ -1,0 +1,93 @@
+  .container{
+    width: fit-content;
+  }
+  .recipe-box {
+    flex-direction: column;
+    background-color: #ffd700; /* Foodie yellow background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .recipe-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+  }
+  
+  .recipe-box h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #fcfcfc; /* Dark text color */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #413c3c; /* Medium text color */
+    word-wrap: break-word;
+    overflow: hidden; /* Hide overflow text */
+    max-height: 3.6rem; /* Set maximum height */
+    transition: max-height 0.3s ease; /* Smooth transition for height change */
+  }
+  
+  .recipe-box:hover .description {
+    max-height: 100%; /* Expand height on hover */
+  }
+  /* CSS for Modal Header */
+.modal-header {
+    word-wrap: break-word; /* Allow long words to wrap */
+    word-break: break-word; /* Break words when necessary */
+    background-color: #ffd700; /* Light gray background color */
+    color: #ffffff; /* Text color */
+    padding: 20px; /* Padding */
+    border-bottom: 1px solid #ccc; /* Bottom border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+    /* CSS for Ingredients List */
+ol {
+    list-style: none; /* Remove default numbering */
+    counter-reset: ingredient-counter; /* Reset counter for ingredients */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  ol li {
+    position: relative; /* Make the list items relative */
+    padding-left: 25px; /* Add padding to create space for circular regions */
+    margin-bottom: 20px; /* Add margin between list items */
+  }
+  
+  ol li::before {
+    content: counter(ingredient-counter); /* Use the counter as content */
+    counter-increment: ingredient-counter; /* Increment counter for each item */
+    position: absolute; /* Position the circular region */
+    left: 0; /* Position relative to the left of the list item */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    width: 20px; /* Width of the circular region */
+    height: 20px; /* Height of the circular region */
+    background-color: #ffd700; /* Yellow background color */
+    color: #fff; /* Text color */
+    border-radius: 50%; /* Make it circular */
+    display: flex; /* Use flexbox to center the number */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 0.8rem; /* Font size */
+    font-weight: bold; /* Bold font */
+  }
+  p {
+    word-wrap: break-word; /* Enable word-wrap to prevent overflow */
+    color: #333; /* Set text color */
+    font-size: 1rem; /* Set font size */
+    transition: color 0.3s ease; /* Add transition for color change */
+  }
+  
+  /* CSS for Ingredients Header */
+  h4 {
+    color: #555; /* Set text color */
+    font-size: 1.2rem; /* Set font size */
+    margin-bottom: 10px; /* Add margin below the header */
+  }
