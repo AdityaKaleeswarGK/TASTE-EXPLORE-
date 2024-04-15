@@ -1,0 +1,30 @@
+  .form-container {
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    max-width: 1000px; /* Adjusted width */
+    background-color: #f7f7f7; /* Spiky color background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  
+  .select-box {
+    margin-bottom: 10px;
+  }
+  
+  .search-button {
+    margin-top: 10px;
+    background-color: #d9cf42;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #aea724;
+  }
+  
