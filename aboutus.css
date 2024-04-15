@@ -1,0 +1,205 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 40px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+nav{
+    display: grid; 
+	gap: 4rem; 
+} 
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    width: 100%;
+    background-color: #24252a;
+}
+.logo{
+    cursor: pointer;
+    width: 16%;
+    height: 16%;
+   
+}
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav_links li:last-child {
+    margin-right: 0;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136, 169, 1) ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136, 169, 1) ;
+}
+/* tryagain.css */
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.nav_links li:last-child {
+    margin: right 10px; ;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./main_pagebannerbg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+
+}
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+   width: 300px;
+   height: 4px;
+   background: #fc036b;
+   margin: 10px auto;
+   border-radius: 5px;
+}
+.header-content h1{
+    font-size: 10vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.ctn{
+    padding: 4px 10px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+
+.box {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.food-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    width: 450px;
+    height: 250px;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.team-section {
+    display: none;
+    padding: 4rem 0;
+}
+
+.team-section h2 {
+    color: #333;
+    text-align: center;
+}
+
+#teamList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#teamList li {
+    margin-bottom: 1rem;
+    background-color: #020000;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-suggestion {
+    margin-top: 2rem;
+    font-style: italic;
+}

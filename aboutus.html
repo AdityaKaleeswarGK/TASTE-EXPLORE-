@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body> 
+    <header>
+    <img class="logo" src="./llloog.png" alt="logo">
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http://localhost:5174/">RecipieHub</a></li>
+            <li><a href="http://localhost:5173/">Diet plan</a></li>      
+            <li><a href="#">About us</a></li>
+
+            
+        </ul>
+    </nav>
+    <a class="login"href="login.html"><button id="login">Login/SignUp</button></a>
+        </header>
+    <div class="box">
+        <header>
+            <div class="container">
+                <h1>About Us</h1>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="container">
+                <img src="./healthy.jpg" alt="Healthy Food" class="food-image">
+                <p>We are dedicated to helping you achieve your health and fitness goals.</p>
+                <p>Our mission is to provide a platform where you can plan your diet, store your favorite recipes, and track your progress.</p>
+                <button id="showTeam">Meet Our Team</button>
+                <button id="suggestRecipe">Get Recipe Idea</button>
+                <p id="recipeSuggestion" class="recipe-suggestion"></p>
+            </div>
+        </section>
+
+        <section class="team-section" id="teamSection">
+            <div class="container">
+                <h2>Our Team</h2>
+                <ul id="teamList">
+                    <!-- JavaScript will populate this list -->
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="aboutus.js"></script>
+</body>
+</html>

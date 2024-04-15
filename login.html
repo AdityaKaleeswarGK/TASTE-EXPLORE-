@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./llloog.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="http://localhost:5174/">RecipieHub</a></li>
+                <li><a href="http://localhost:5173/">Diet plan</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+        <a class="login"href="login.html"><button id="login">Login/SignUp</button></a>
+            </header>
+    <div class="container">
+        <img src="./backimg.jpg" alt="Background" class="background-image">
+        <div class="form-container">
+            <div class="form-toggle">
+                <button class="toggle-btn active" id="signInToggle">Sign In</button>
+                <button class="toggle-btn" id="signUpToggle">Sign Up</button>
+            </div>
+            <form id="signInForm" class="form visible">
+                <h2>Sign in to your account</h2>
+                <input type="email" placeholder="Email" id="signInEmail" required>
+                <input type="password" placeholder="Password" id="signInPassword" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <form id="signUpForm" class="form">
+                <h2>Create an account</h2>
+                <input type="text" placeholder="Name" id="signUpName" required>
+                <input type="email" placeholder="Email" id="signUpEmail" required>
+                <input type="password" placeholder="Password" id="signUpPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
